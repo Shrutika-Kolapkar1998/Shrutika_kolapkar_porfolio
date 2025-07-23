@@ -2198,6 +2198,7 @@ section,
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 1.5rem;
+  margin-bottom: var(--section-spacing);
 }
 
 .portfolio-details .portfolio-details-media .tech-stack-badges span {
@@ -2215,6 +2216,18 @@ section,
   background-color: color-mix(in srgb, var(--heading-color), transparent 70%);
   transform: translateY(-2px);
 }
+
+.portfolio-details .portfolio-details-media .project-overview {
+  margin-bottom: var(--section-spacing);
+}
+
+.portfolio-details .portfolio-details-media .project-overview .lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  margin-bottom: 1.5rem;
+}
+
 
 .portfolio-details .portfolio-details-content {
   padding: 0 0 0 2rem;
@@ -2384,14 +2397,51 @@ section,
   font-size: 1.1em;
 }
 
-.portfolio-details .portfolio-details-content .cta-buttons {
+
+.portfolio-details .project-features {
+  margin-bottom: var(--section-spacing);
+}
+
+.portfolio-details .project-features h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+}
+
+.portfolio-details .project-features h3 i {
+  margin-right: 10px;
+  color: var(--accent-color);
+  font-size: 1.1em;
+}
+
+.portfolio-details .project-features .feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.portfolio-details .project-features .feature-list li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+}
+
+.portfolio-details .project-features .feature-list li i {
+  color: var(--accent-color);
+  margin-right: 10px;
+  font-size: 1.1em;
+}
+
+.portfolio-details .cta-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: auto;
 }
 
-.portfolio-details .portfolio-details-content .cta-buttons .btn-view-project {
+.portfolio-details .cta-buttons .btn-view-project {
   padding: 12px 28px;
   background-color: var(--accent-color);
   color: var(--contrast-color);
@@ -2400,13 +2450,13 @@ section,
   transition: all 0.3s ease;
 }
 
-.portfolio-details .portfolio-details-content .cta-buttons .btn-view-project:hover {
+.portfolio-details .cta-buttons .btn-view-project:hover {
   background-color: color-mix(in srgb, var(--accent-color), black 15%);
   transform: translateY(-3px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-details .portfolio-details-content .cta-buttons .btn-next-project {
+.portfolio-details .cta-buttons .btn-next-project {
   padding: 12px 28px;
   background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
   color: var(--heading-color);
@@ -2418,15 +2468,15 @@ section,
   gap: 8px;
 }
 
-.portfolio-details .portfolio-details-content .cta-buttons .btn-next-project i {
+.portfolio-details .cta-buttons .btn-next-project i {
   transition: transform 0.3s ease;
 }
 
-.portfolio-details .portfolio-details-content .cta-buttons .btn-next-project:hover {
+.portfolio-details .cta-buttons .btn-next-project:hover {
   background-color: color-mix(in srgb, var(--heading-color), transparent 80%);
 }
 
-.portfolio-details .portfolio-details-content .cta-buttons .btn-next-project:hover i {
+.portfolio-details .cta-buttons .btn-next-project:hover i {
   transform: translateX(3px);
 }
 
@@ -2441,7 +2491,7 @@ section,
     padding: 2rem 0 0 0;
   }
 
-  .portfolio-details .portfolio-details-content .cta-buttons {
+  .portfolio-details .cta-buttons {
     margin-top: 2rem;
   }
 }
