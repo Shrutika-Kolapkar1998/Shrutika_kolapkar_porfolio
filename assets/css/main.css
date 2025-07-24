@@ -2218,7 +2218,7 @@ section,
 }
 
 .portfolio-details .portfolio-details-media .project-overview {
-  margin-bottom: var(--section-spacing);
+  margin-bottom: 1rem;
 }
 
 .portfolio-details .portfolio-details-media .project-overview .lead {
@@ -2406,7 +2406,7 @@ section,
   display: flex;
   align-items: center;
   font-size: 1.25rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: .5rem;
 }
 
 .portfolio-details .project-features h3 i {
